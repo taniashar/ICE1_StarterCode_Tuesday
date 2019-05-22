@@ -20,6 +20,17 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
+            
+            public static void main(String[] args){
+                
+    Scanner input = new Scanner(System.in);
+    String suits[] = {"H", "D", "C", "S"};
+    String cards[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10",
+                      "J", "Q", "K", "A" };
+    Random random = new Random();
+    System.out.println(cards[random.nextInt(cards.length)]
+        + suits[random.nextInt(suits.length)]);
+}
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
